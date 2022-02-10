@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+
+import {Content} from "./first.js";
+import './index.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,7 +11,11 @@ class App extends React.Component {
   }
   render() {
     return (
-      <h1>hello world!</h1>
+      <>
+      <main>
+        <Content />
+      </main>
+      </>
     );
   }
 }
