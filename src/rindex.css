@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1020px) {
+  .navContainer{
+    display: grid;
+    grid-template-columns: repeat(2, .2fr);
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .menuContainer > .menuIcon {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  html,body{
+    font-size: 2.5vw;
+  }
+  .first{
+    background: url("./assets/right_bg_landing_header.svg"),
+    url("./assets/center_bg_landing_header.svg")
+    #404eed;
+    background-repeat: no-repeat;
+    background-size: 90%, auto;
+    background-position: 400% bottom, 100% bottom;
+
+    padding-inline: 5%;
+  }
+  @keyframes movebg{
+    to{
+      background-position: 400% bottom, 0% bottom;
+    }
+  }
+  .firstMainContent{
+    justify-items: start;
+    text-align: left;
+
+    padding-inline: 0%;
+  }
+  .commonContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .commonContent section:nth-child(1) {
+    align-self: end;
+    margin-block: 0 10%;
+  }
+  .commonContent section:nth-child(2) {
+    align-self: start;
+  }
+}

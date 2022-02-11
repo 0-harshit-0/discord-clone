@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 
 import {Content} from "./first.js";
 import './index.css';
+import './rindex.css';
 
 class App extends React.Component {
   constructor(props) {

@@ -38,7 +38,10 @@ class NavBar extends React.Component {
             })
           }
         </nav>
-        <Logoend />
+        <section className="menuContainer">
+          <Logoend />
+          <button className="menuIcon">---</button>
+        </section>
       </div>
     );
   }
