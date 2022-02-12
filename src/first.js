@@ -27,45 +27,51 @@ function First(props) {
 function Second(props) {
   return (
     <div className="content commonContent second">
-      <section className="imageCont">
-        <img src={inviteLogo} alt="invite" />
-      </section>
-      <section className="txtCont">
-        <h2>Create an invite-only place where you belong</h2>
-        <p>
-          Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
-        </p>
-      </section>
+      <div className="innercontent innersecond">
+        <section className="imageCont">
+          <img src={inviteLogo} alt="invite" />
+        </section>
+        <section className="txtCont">
+          <h2>Create an invite-only place where you belong</h2>
+          <p>
+            Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
+          </p>
+        </section>
+      </div>
     </div>
   );
 }
 function Third(props) {
   return (
     <div className="content commonContent third">
-      <section className="txtCont">
-        <h2>Where hanging out is easy</h2>
-        <p>
-          Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.
-        </p>
-      </section>
-      <section className="imageCont">
-        <img src={hangingLogo} alt="hanging" />
-      </section>
+      <div className="innercontent innerthird">
+        <section className="txtCont">
+          <h2>Where hanging out is easy</h2>
+          <p>
+            Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.
+          </p>
+        </section>
+        <section className="imageCont">
+          <img src={hangingLogo} alt="hanging" />
+        </section>
+      </div>
     </div>
   );
 }
 function Fourth(props) {
   return (
     <div className="content commonContent fourth">
-      <section className="imageCont">
-        <img src={fandomLogo} alt="fandom" />
-      </section>
-      <section className="txtCont">
-        <h2>From few to a fandom</h2>
-        <p>
-          Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
-        </p>
-      </section>
+      <div className="innercontent innerfourth">
+        <section className="imageCont">
+          <img src={fandomLogo} alt="fandom" />
+        </section>
+        <section className="txtCont">
+          <h2>From few to a fandom</h2>
+          <p>
+            Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
+          </p>
+        </section>
+      </div>
     </div>
   );
 }
@@ -85,12 +91,12 @@ function Fifth(props) {
 function Sixth(props) {
   return (
     <div className="content sixth">
-      <div className="nonFooter">
+      {/*<div className="nonFooter">
         <h2>READY TO START YOUR JOURNEY?</h2>
         <button>
           <a href="/download">Download for Windows</a>
         </button>
-      </div>
+      </div>*/}
       <div className="footer">
         <h3>IMAGINE A PLACE</h3>
         <h3>IMAGINE A PLACE</h3>
@@ -102,22 +108,17 @@ function Sixth(props) {
     </div>
   );
 }
-class Content extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <>
-        <First />
-        <Second />
-        <Third />
-        <Fourth />
-        <Fifth />
-        <Sixth />
-      </>
-    );
-  }
+function Content(props) {
+  return (
+    <>
+      <First />
+      <Second />
+      <Third />
+      <Fourth />
+      <Fifth />
+      <Sixth />
+    </>
+  );
 }
 
 export {Content};

@@ -71,7 +71,6 @@ main{
 .content{
   display: grid;
 
-  height: 100%;
   scroll-snap-align: center;
 }
 button{
@@ -105,7 +104,7 @@ a{
 }
 .logoCont > strong{
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 nav{
   display: flex;
@@ -115,6 +114,7 @@ nav{
   width: 100%;
 }
 nav .navlinks {
+  font-size: 1.1rem;
   color: inherit;
   font-weight: bold;
 }
@@ -127,7 +127,7 @@ nav .navlinks {
   width: 100%;
 }
 .menuContainer > button{
-  font-size: .8rem;
+  font-size: .9rem;
   padding-block: 3%;
   padding-inline: 6%;
 }
@@ -136,7 +136,9 @@ nav .navlinks {
 }
 /* --------------first------------------ */
 .first{
+  height: 100%;
   grid-template-rows: 15% auto;
+  gap: 20%;
 
   background: url("./assets/left_bg_landing_header.svg"),
   url("./assets/right_bg_landing_header.svg"),
@@ -158,7 +160,7 @@ nav .navlinks {
 }
 .firstMainContent{
   display: grid;
-  align-content: center;
+  align-content: start;
   gap: 5%;
 
   padding-inline: 20%;
@@ -193,17 +195,21 @@ nav .navlinks {
 
 /* ---------------- commonContent second, third and fourth ------------------- */
 .commonContent {
-  grid-template-columns: repeat(2, 1fr);
   place-items: center;
 
-  padding-inline: 5rem;
+  padding: 10vw;
+}
+.innercontent {
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .imageCont{
-  padding-inline: 0rem;
-  width: 100%;
+  flex: 1;
 }
 .txtCont {
-  padding-inline: 5rem;
+  flex: 1;
 }
 .txtCont > h2 {
   font-size: 3rem;
@@ -211,7 +217,7 @@ nav .navlinks {
 }
 .txtCont > p {
   font-size: 1.3rem;
-  margin-block: 5% 0;
+  margin-block: 3% 0;
 }
 
 /* ---------------- third ------------------- */
@@ -283,6 +289,8 @@ nav .navlinks {
   line-height: 1;
   font-size: 2.5rem;
 }
+
+
 .footer > .footEnd {
   grid-column: 1 / span 10;
   display: flex;
@@ -293,9 +301,9 @@ nav .navlinks {
   border-top: solid 1px;
 }
 .footEnd > button {
-  font-size: .9rem;
-  padding-block: .7%;
-  padding-inline: 2%;
+  font-size: 1rem;
+  padding-block: .8%;
+  padding-inline: 3%;
   background: var(--brand);
   color: white;
   font-weight: bold;

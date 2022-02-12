@@ -14,38 +14,39 @@
 
 @media only screen and (max-width: 850px) {
   html,body{
-    font-size: 2.5vw;
+    font-size: 1.5vw;
   }
   .first{
     background: url("./assets/right_bg_landing_header.svg"),
     url("./assets/center_bg_landing_header.svg")
     #404eed;
     background-repeat: no-repeat;
-    background-size: 90%, auto;
-    background-position: 400% bottom, 100% bottom;
+    background-size: 70%, auto;
+    background-position: 200% bottom, 100% bottom;
 
     padding-inline: 5%;
+    gap: 15%;
   }
   @keyframes movebg{
     to{
-      background-position: 400% bottom, 0% bottom;
+      background-position: 200% bottom, 0% bottom;
     }
   }
   .firstMainContent{
     justify-items: start;
     text-align: left;
 
-    padding-inline: 0%;
+    padding-inline: 0 30%;
   }
-  .commonContent {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+  .firstMainContent .btnCont {
+    flex-direction: column;
+    align-content: flex-start;
   }
-  .commonContent section:nth-child(1) {
-    align-self: end;
-    margin-block: 0 10%;
+  /* ------------second, third, and fourth------------ */
+  .innercontent {
+    flex-direction: column;
   }
-  .commonContent section:nth-child(2) {
-    align-self: start;
+  .imageCont{
+    width: 80%;
   }
 }
