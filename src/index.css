@@ -97,6 +97,8 @@ a{
   place-items: center;
 
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 .logoCont{
   display: flex;
@@ -197,13 +199,13 @@ nav .navlinks {
 .commonContent {
   place-items: center;
 
-  padding: 10vw;
+  padding-inline: 10vw;
+  padding-block: 10vw;
 }
 .innercontent {
   height: max-content;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .imageCont{
   flex: 1;

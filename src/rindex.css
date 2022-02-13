@@ -47,6 +47,24 @@
     flex-direction: column;
   }
   .imageCont{
-    width: 80%;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html,body{
+    font-size: 2.5vw;
+  }
+  .commonContent {
+    padding-block: 20vw;
+  }
+  .imageCont{
+    width: 100%;
+  }
+  .txtCont > h2 {
+    font-size: 2.5rem;
+  }
+  .txtCont > p {
+    font-size: 1.7rem;
   }
 }
