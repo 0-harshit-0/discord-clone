@@ -7,9 +7,9 @@ import './index.css';
 import './rindex.css';
 
 class App extends React.Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
-  }
+  }*/
   render() {
     return (
       <>
